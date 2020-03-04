@@ -27,7 +27,62 @@ import Foundation
  */
 // Begin your work here...
 
+//guard lenth > 0 width > 0 else {
+    // return a nil value
+  //   return nil
+    
 
+
+
+//find the perimeter of a circle
+// - Diameter
+// Perimeter of a circle
+
+func perimeterOfCircle (diameter: Double) -> Double {
+   guard diameter > 0 else {
+       //return a nil value
+       return nil
+   }
+    return Double.pi * (diameter)
+    
+}
+
+print ("The perimeter of the circle is " + String(format: "%.2f" , perimeterOfCircle(diameter: 10.5)))
+
+
+//Perimeter of a parallelogram
+func perimeterOfparallelogram(base: Double, circumference: Double) -> Double {
+    return (2.0*(base+circumference))
+    
+}
+
+print ("The perimeter of the parallelogram is " + String(format: "%.2f" , perimeterOfparallelogram(base: 10.0, circumference: 20.0)))
+
+
+
+//Area of a triangle
+func areaOfTriangle(base: Double, height: Double) -> Double {
+    return (1/2*(base*height))
+    
+}
+
+print ("The area of a triangle is " + String(format: "%.2f" , areaOfTriangle(base: 5.5, height: 7.5)))
+
+// Area of a parallelogram
+func areaOfParallelogram(base: Double, height: Double) -> Double {
+    return (base*height)
+    
+}
+
+print ("The area of a parallelogram is " + String(format: "%.2f" , areaOfParallelogram(base: 5.5, height: 7.5)))
+
+// Surface Area of a circle
+func surfaceAreaOfCircle(radius: Double) -> Double {
+    return (4*Double.pi*(pow(radius, 2.0)))
+    
+}
+
+print ("The area of a parallelogram is " + String(format: "%.2f" , areaOfParallelogram(base: 5.5, height: 7.5)))
 
 /*:
  [Previous: Writing Documentation](@previous) | Page 7
