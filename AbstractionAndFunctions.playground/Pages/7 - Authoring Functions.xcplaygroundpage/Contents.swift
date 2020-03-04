@@ -52,6 +52,9 @@ print ("The perimeter of the circle is " + String(format: "%.2f" , perimeterOfCi
 
 //Perimeter of a parallelogram
 func perimeterOfparallelogram(base: Double, circumference: Double) -> Double {
+    guard lenth > 0 width > 0 else {
+     //return a nil value
+     return nil
     return (2.0*(base+circumference))
     
 }
@@ -62,6 +65,9 @@ print ("The perimeter of the parallelogram is " + String(format: "%.2f" , perime
 
 //Area of a triangle
 func areaOfTriangle(base: Double, height: Double) -> Double {
+    guard lenth > 0 width > 0 else {
+      // return a nil value
+     return nil
     return (1/2*(base*height))
     
 }
@@ -70,6 +76,9 @@ print ("The area of a triangle is " + String(format: "%.2f" , areaOfTriangle(bas
 
 // Area of a parallelogram
 func areaOfParallelogram(base: Double, height: Double) -> Double {
+    guard lenth > 0 width > 0 else {
+      // return a nil value
+      return nil
     return (base*height)
     
 }
@@ -78,6 +87,9 @@ print ("The area of a parallelogram is " + String(format: "%.2f" , areaOfParalle
 
 // Surface Area of a circle
 func surfaceAreaOfCircle(radius: Double) -> Double {
+    guard lenth > 0 width > 0 else {
+      // return a nil value
+    return nil
     return (4*Double.pi*(pow(radius, 2.0)))
     
 }
